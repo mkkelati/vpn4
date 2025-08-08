@@ -15,6 +15,18 @@ sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/mkkelati/vpn4/main/sc
 curl -fsSL https://raw.githubusercontent.com/mkkelati/vpn4/main/scripts/vless-manager.sh | sudo bash -s -- --install
 ```
 
+- wget-based install (with update/upgrade first):
+
+```bash
+sudo apt-get update -y; sudo apt-get upgrade -y; wget -qO /usr/local/sbin/vless-manager https://raw.githubusercontent.com/mkkelati/vpn4/main/scripts/vless-manager.sh && sudo chmod +x /usr/local/sbin/vless-manager && sudo /usr/local/sbin/vless-manager
+```
+
+- wget one-shot installer (install flow immediately):
+
+```bash
+sudo apt-get update -y; sudo apt-get upgrade -y; wget -qO - https://raw.githubusercontent.com/mkkelati/vpn4/main/scripts/vless-manager.sh | sudo bash -s -- --install
+```
+
 ### Upgrade to latest script
 ```bash
 sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/mkkelati/vpn4/main/scripts/vless-manager.sh -o /usr/local/sbin/vless-manager && chmod +x /usr/local/sbin/vless-manager'
