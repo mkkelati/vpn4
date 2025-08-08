@@ -3,21 +3,21 @@
 This repository provides a Bash-based manager that installs and configures Xray (VLESS over WebSocket + TLS) behind Nginx, suitable for Cloudflare CDN and compatible with HTTP Injector via standard VLESS import links.
 
 ### Quick install from GitHub (recommended)
-- Replace `<GITHUB_USER>` with your GitHub username after pushing this repo (assumed repo name: `vpn4`).
+Repo: `github.com/mkkelati/vpn4`
 
 ```bash
-sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/<GITHUB_USER>/vpn4/main/scripts/vless-manager.sh -o /usr/local/sbin/vless-manager && chmod +x /usr/local/sbin/vless-manager && /usr/local/sbin/vless-manager'
+sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/mkkelati/vpn4/main/scripts/vless-manager.sh -o /usr/local/sbin/vless-manager && chmod +x /usr/local/sbin/vless-manager && /usr/local/sbin/vless-manager'
 ```
 
 - One-shot installer (runs install flow immediately; still interactive for domain prompts):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<GITHUB_USER>/vpn4/main/scripts/vless-manager.sh | sudo bash -s -- --install
+curl -fsSL https://raw.githubusercontent.com/mkkelati/vpn4/main/scripts/vless-manager.sh | sudo bash -s -- --install
 ```
 
 ### Upgrade to latest script
 ```bash
-sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/<GITHUB_USER>/vpn4/main/scripts/vless-manager.sh -o /usr/local/sbin/vless-manager && chmod +x /usr/local/sbin/vless-manager'
+sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/mkkelati/vpn4/main/scripts/vless-manager.sh -o /usr/local/sbin/vless-manager && chmod +x /usr/local/sbin/vless-manager'
 ```
 
 ### Features
